@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blackjack</title>
+    <link rel="stylesheet" href="blackjack.css">
+</head>
+<body>
+   <div class="container-1">
+            <h2>Blackjack Game</h2>
+            <h3 class="blackjack-result-notify">let's play</h3>
+        <div class="flexblackjack-row">
+            <div class="your-box">
+                <h2>You: <span class="yourblackjack-result">0</span></h2>
+            </div>
+            <div class="dealer-box">
+                <h2>Dealer: <span class="compblackjack-result">0</span></h2>
+            </div>
+        </div>
+        <div class="flexblackjack-row-2">
+            <div>
+                <button class="btn blue" id="blackjackhit-button">Hit</button>
+                <button class="btn yellow" id="blackjackstand-button">Stand</button>
+                <button class="btn red" id="blackjackdeal-button">Deal</button>
+            </div>
+        </div>
+        <div class="flexbackjack-row-3">
+            <div>
+                <table class="table" border="" cellpadding='15px' style="border: 1px solid white; ">
+                    <tr>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>Draws</th>
+                    </tr>
+                    <tr>
+                        <td><span class="wins">0</span></td>
+                        <td><span class="losses">0</span></td>
+                        <td><span class="draws">0</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <button class="btn-exit">Exit Game</button>
+   </div>
+   <script src="blackjack.js"></script>
+</body>
+</html>

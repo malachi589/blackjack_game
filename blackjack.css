@@ -1,0 +1,193 @@
+body{
+    background: url('./images/background.jpg') center;
+    background-size: cover;
+    max-height: 9rem;
+    color: #fff;
+    /* font-size: 1rem; */
+}
+.container-1{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.flexblackjack-row{
+    /* background: url('./images/background.jpg')center; */
+    /* background-size: cover; */
+    /* color: white; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    /* border: 1px solid black; */
+}
+.flexblackjack-row div{
+    /* border: 1px solid black; */
+    padding: 1rem;
+    height: 20rem;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.flexblackjack-row-2{
+    /* background: url('./images/background.jpg')center; */
+    /* background-size: cover; */
+    padding: 0.7rem;
+}
+.btn{
+    font-size: 1.5rem;
+    border: none;
+    background-color: blue;
+    border-radius: 10%;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+.red{
+    background-color: red;
+    /* user-select: none; */
+}
+.blue{
+    pointer-events: all;
+}
+.blue.btnstop{
+    pointer-events: none;
+}
+.blue:hover{
+    background-color: darkblue;
+}
+.red:hover{
+    background-color: rgba(214, 16, 16, 0.993);
+}
+.yellow{
+    background-color: yellow;
+    pointer-events: none;
+}
+.yellow.standstop{
+    pointer-events: all;
+}
+.yellow:hover{
+    background-color: darkorange;
+}
+.flexbackjack-row-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.your-box img{
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+}
+.dealer-box img{
+    width: 100px;
+    height: 150px;
+    margin: 10px; 
+}
+.btn-exit{
+    position: fixed;
+    top: 7.5rem;
+    right: 3rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 2rem;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: #000; 
+}
+.btn-exit:hover{
+    background-color: grey;
+}
+@media screen and (max-width:960px) {
+    .flexblackjack-row div{
+        height: 25rem;
+        padding: 1.5rem;
+    }
+}
+@media screen and (max-width:480px) {
+    body{
+        height: 3rem;
+    }
+    .your-box > *{
+        font-size: 1rem;
+    }
+    .your-box img{
+        width: 60px;
+        height: 80px;
+        margin: 5px;
+    }
+    .dealer-box > *{
+        font-size: 1rem;
+    }
+    .dealer-box img{
+        width: 60px;
+        height: 80px;
+        margin: 5px;
+    }
+    .flexblackjack-row div{
+        flex-wrap: wrap;
+        height: 16rem;
+        /* width: 10rem; */
+        padding: 0.5rem;
+    }
+    .flexblackjack-row-2{
+        padding: 0.5rem;
+        margin-bottom: 0 auto;
+    }
+    .btn{
+        font-size: 1rem;
+        border: none;
+        background-color: blue;
+        border-radius: 10%;
+        margin: 0.7rem 0.2rem;
+        padding: 0.5rem;
+        cursor: pointer;
+        color: #fff;
+    }
+    .red{
+        background-color: red;
+        /* user-select: none; */
+    }
+    .blue{
+        pointer-events: all;
+    }
+    .blue.btnstop{
+        pointer-events: none;
+    }
+    .blue:hover{
+        background-color: darkblue;
+    }
+    .red:hover{
+        background-color: rgba(214, 16, 16, 0.993);
+    }
+    .yellow{
+        background-color: yellow;
+        pointer-events: none;
+    }
+    .yellow.standstop{
+        pointer-events: all;
+    }
+    .yellow:hover{
+        background-color: darkorange;
+    }
+    .table{
+        table-layout: auto;
+        padding: 0;
+    }
+    .btn-exit{
+        position: fixed;
+        top: 5rem;
+        right: 1.5rem;
+        font-size: 0.8rem;
+        border: none;
+        background-color: #fff;
+        border-radius: 2rem;
+        margin: 1rem 0.5rem;
+        padding: 0.5rem;
+        cursor: pointer;
+        color: #000; 
+    }
+}

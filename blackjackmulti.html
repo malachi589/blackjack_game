@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blackjack</title>
+    <link rel="stylesheet" href="blackjackmulti.css">
+    <!-- <link rel="stylesheet" href="./blackjackstart.css"> -->
+</head>
+<body>
+   <div class="container-1">
+            <h2>Blackjack Game</h2>
+            <!-- <h3 class="blackjack-result-notify">let's play</h3> -->
+        <div class="flexblackjack-row">
+            <div class="playera-box">
+                <h2>Player A: <span class="PlayerAblackjack-result">0</span></h2>
+            </div>
+            <div class="playerb-box">
+                <h2>Player B: <span class="PlayerBblackjack-result">0</span></h2>
+            </div>
+        </div>
+        <div class="flexblackjack-row-2">
+            <div>
+                <button class="btn blue blue-playerA" id="blackjackhitA-button">Hit</button>
+                <button class="btn red" id="blackjackdeal-button">Deal</button>
+                <button class="btn blue blue-playerB" id="blackjackhitB-button">Hit</button>
+            </div>
+            <button class="btn green" id="blackjackSTAND-button">Result</button>
+        </div>
+        <div class="flexbackjack-row-3">
+            <div>
+                <h3 class="playerA-win">PLAYER A WON: <span class="A-win">0</span></h3>
+                <h3 class="playerB-win">PLAYER B WON: <span class="B-win">0</span></h3>
+            </div>
+        </div>
+        <div class="notify-container">
+            <div class="notify-div">
+                <div class="heading-container">
+                    <h3 class="heading-3">MESSAGE</h3>
+                </div>
+                <P class="notify-words">PLAYER WON</P>
+                <button class="btn blue-small">OK</button>
+            </div>
+        </div>
+        <button class="btn-exit">Exit Game</button>
+   </div>
+   <script src="blackjackmulti.js"></script>
+</body>
+</html>
